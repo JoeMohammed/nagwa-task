@@ -1,0 +1,343 @@
+/* ====================================== _____________ Variables Styles _____________ ====================================== */
+/* ====================================== _____________ Variables Styles _____________ ====================================== */
+/* ====================================== _____________ Functions Styles _____________ ====================================== */
+/* ====================================== _____________ Functions Styles _____________ ====================================== */
+/* ====================================== _____________ Mixin Styles _____________ ====================================== */
+/* ====================================== _____________ Mixin Styles _____________ ====================================== */
+/* ====================================== _____________ Classes Styles _____________ ====================================== */
+.leftContainer {
+  margin-left: auto;
+  padding: 0 15px;
+  padding-right: 0;
+}
+@media (max-width: 576px) {
+  .leftContainer {
+    width: 100%;
+    padding-right: 15px;
+    margin-left: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .leftContainer {
+    width: calc(540px + ((100vw - 540px) / 2));
+    padding-right: 15px;
+    margin-left: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .leftContainer {
+    width: calc(720px + ((100vw - 720px) / 2));
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .leftContainer {
+    width: calc(960px + ((100vw - 960px) / 2));
+  }
+}
+@media (min-width: 1200px) {
+  .leftContainer {
+    width: calc(1140px + ((100vw - 1140px) / 2));
+  }
+}
+
+.mainColor {
+  color: #b600ee !important;
+}
+
+.secColor {
+  color: #222 !important;
+}
+
+.whtColor {
+  color: #fff !important;
+}
+
+.blkColor {
+  color: #000 !important;
+}
+
+.mainBgColor {
+  background-color: #b600ee !important;
+}
+
+.secBgColor {
+  background-color: #222 !important;
+}
+
+.whtBgColor {
+  background-color: #fff !important;
+}
+
+.blkBgColor {
+  background-color: #000 !important;
+}
+
+.font_light {
+  font-weight: 300;
+}
+
+.font_regular {
+  font-weight: 400;
+}
+
+.font_medium {
+  font-weight: 600;
+}
+
+.font_bold {
+  font-weight: 800;
+}
+
+.font_bolder {
+  font-weight: 900;
+}
+
+.hugeTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.mainTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #b600ee;
+  margin-bottom: 1.25rem;
+}
+
+.smTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 1.25rem;
+}
+
+.subTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1.25rem;
+}
+
+p,
+.p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+a,
+.a,
+.link {
+  font-size: 0.95rem;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.img_cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.zoomIn {
+  overflow: hidden;
+  margin: 0;
+}
+.zoomIn img {
+  transition: all 0.5s ease-in-out;
+}
+.zoomIn:hover img {
+  transform: scale(1.075);
+}
+
+.zoomOut {
+  overflow: hidden;
+  margin: 0;
+}
+.zoomOut img {
+  transition: all 0.5s ease-in-out;
+}
+.zoomOut:hover img {
+  transform: scale(0.925);
+}
+
+/* ====================================== _____________ Classes Styles _____________ ====================================== */
+/* ====================================== _____________ Reset Styles _____________ ====================================== */
+* {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 88%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Obviously Demo";
+  overflow-x: hidden;
+}
+body.ar {
+  font-family: "Obviously Demo";
+  direction: rtl;
+  text-align: right;
+}
+
+/* ====================================== _____________ Reset Styles _____________ ====================================== */
+/* ====================================== _____________ Fonts Styles _____________ ====================================== */
+/* ====================================== _____________ Fonts Styles _____________ ====================================== */
+/* ====================================== _____________ Global Styles _____________ ====================================== */
+/* ====================================== _____________ Global Styles _____________ ====================================== */
+/* ====================================== _____________ Grids Styles _____________ ====================================== */
+/* ====================================== _____________ Grids Styles _____________ ====================================== */
+/* ====================================== _____________ Header Styles _____________ ====================================== */
+/* ====================================== _____________ Header Styles _____________ ====================================== */
+/* ====================================== _____________ Footer Styles _____________ ====================================== */
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+footer .footer {
+  padding: 50px 0;
+  background-color: #000;
+}
+footer .footer_brandLogo {
+  text-align: center;
+}
+footer .footer_brandLogo_img {
+  margin-bottom: 15px;
+}
+footer .footer_brandLogo_text {
+  color: #fff;
+  margin-bottom: 0;
+}
+footer .copyright {
+  text-align: center;
+  padding: 8px 0;
+  border-top: 1px solid rgba(112, 112, 112, 0.4);
+}
+footer .copyright p {
+  color: #707070;
+  margin-bottom: 0;
+}
+footer .copyright p a {
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0;
+}
+footer .copyright p a:hover {
+  color: #b600ee;
+}
+
+/* ====================================== _____________ Footer Styles _____________ ====================================== */
+/* ====================================== _____________ Sidebar Styles _____________ ====================================== */
+/* ====================================== _____________ Sidebar Styles _____________ ====================================== */
+/* ====================================== _____________ Forms Styles _____________ ====================================== */
+/* ====================================== _____________ Forms Styles _____________ ====================================== */
+/* ====================================== _____________ Buttons Styles _____________ ====================================== */
+/* ====================================== _____________ Buttons Styles _____________ ====================================== */
+/* ====================================== _____________ Slider Styles _____________ ====================================== */
+/* ====================================== _____________ Slider Styles _____________ ====================================== */
+/* ====================================== _____________ Popup Styles _____________ ====================================== */
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 50px 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.popup.flex {
+  display: flex;
+}
+.popup_close {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  color: #b600ee;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b600ee;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.popup_close:hover {
+  background-color: #b600ee;
+  color: #fff;
+  border-color: #b600ee;
+}
+.popup_container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+}
+.popup_container_content {
+  padding: 15px;
+}
+
+/* ====================================== _____________ Popup Styles _____________ ====================================== */
+/* ====================================== _____________ Home Page Styles _____________ ====================================== */
+/* ====================================== _____________ Home Page Styles _____________ ====================================== */
+/* ====================================== _____________ Theme Styles _____________ ====================================== */
+/* ====================================== _____________ Theme Styles _____________ ====================================== */
+
+/*# sourceMappingURL=style.css.map */

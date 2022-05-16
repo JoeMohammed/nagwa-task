@@ -20,12 +20,12 @@
     <!-- upper bar color for mobile -->
     <meta content="#627E90" name="theme-color" />
     <!-- Page Title -->
-    <title>DEMO &nbsp; - &nbsp; Home</title>
+    <title>Success school &nbsp; - &nbsp; Home</title>
     <!-- Favicon-->
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="img/global/fav-logo.ico"
+      href="img/global/Bitmap.ico"
     />
     <!-- Bootstrap v4 -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -41,6 +41,10 @@
     <link rel="stylesheet" href="css/animate.css" />
     <!-- Swiper -->
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- percircle -->
+    <link rel="stylesheet" href="css/percircle.css" />
+    <!-- fullcalendar  -->
+    <link rel="stylesheet" href="css/fullcalendar.min.css" />
     <!-- hover -->
     <!-- <link rel="stylesheet" href="css/hover.css" /> -->
     <!-- Main Style -->
@@ -53,71 +57,396 @@
     <!-- ==================== Header ==================== -->
     <header>
       <!-- ________________ Start Navbar ________________ -->
-      <nav class="navbar"></nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/global/Bitmap.png" alt="Logo" class="img-fluid" />
+            <span>Step to Success school</span>
+          </a>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="far fa-bell"></i>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="far fa-user"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <!-- ________________ End Navbar ________________ -->
     </header>
     <!-- ==================== Header ==================== -->
 
+    <!-- ==================== Second Nav ==================== -->
+    <nav class="navbar navbar-expand-lg secnav navbar-light">
+      <div class="container">
+        <div class="secnav_user">
+          <img
+            src="img/homePage/profile-img.jpg"
+            alt="profile"
+            class="img-fluid"
+          />
+          <h3 class="secnav_user_title">Adam</h3>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse secnav_collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="list-unstyled ls-auto secnav_list">
+            <li class="secnav_list_item">
+              <a href="#" class="secnav_list_item_link">
+                <img
+                  src="img/homePage/maged.jpg"
+                  alt="maged"
+                  class="img-fluid"
+                />
+                <span>Maged</span>
+              </a>
+            </li>
+            <li class="secnav_list_item">
+              <a href="#" class="secnav_list_item_link active">
+                <img
+                  src="img/homePage/profile-img.jpg"
+                  alt="maged"
+                  class="img-fluid"
+                />
+                <span>Adam</span>
+              </a>
+            </li>
+            <li class="secnav_list_item">
+              <a href="#" class="secnav_list_item_link">
+                <img
+                  src="img/homePage/nabil.jpg"
+                  alt="maged"
+                  class="img-fluid"
+                />
+                <span>Nabil</span>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="bttn secnav_btn">
+            <i class="fas fa-user-plus"></i>
+            <span>Add Child</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- ==================== Second Nav ==================== -->
+
     <!-- ==================== Main ==================== -->
-    <main>
-      <!-- ________________ Start Banner Section ________________ -->
-      <section class="intro">
+    <main class="homePage">
+      <!-- ________________ Start statistics Section ________________ -->
+      <section class="section statistics">
         <!-- Container -->
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="section_title">Statistics</h2>
+
+          <div class="statistics_box">
+            <div class="row justify-content-around">
+              <div class="col-lg-3 col-md-4 col-sm-4 mb-4 mb-md-0">
+                <div class="statistics_box_chart">
+                  <div>
+                    <div
+                      id="bluecircle"
+                      data-percent="81"
+                      data-progressBarColor="#4A3274"
+                      class="big"
+                    ></div>
+                  </div>
+                  <h5 class="statistics_box_chart_title">32 out of 40</h5>
+                  <p class="statistics_box_chart_text">Solved Homework</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-4 mb-4 mb-md-0">
+                <div class="statistics_box_chart">
+                  <div>
+                    <div
+                      id="bluecircle2"
+                      data-percent="50"
+                      data-progressBarColor="#739500"
+                      class="big"
+                    ></div>
+                  </div>
+                  <h5 class="statistics_box_chart_title">45 out of 90</h5>
+                  <p class="statistics_box_chart_text">Attended Days</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-4 mb-4 mb-md-0">
+                <div class="statistics_box_chart">
+                  <div>
+                    <div
+                      id="bluecircle3"
+                      data-percent="93"
+                      data-progressBarColor="#950086"
+                      class="big"
+                    ></div>
+                  </div>
+                  <h5 class="statistics_box_chart_title">8 out of 11</h5>
+                  <p class="statistics_box_chart_text">
+                    Online Sessions attended
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Container -->
       </section>
-      <!-- ________________ End Banner Section ________________ -->
+      <!-- ________________ End statistics Section ________________ -->
+
+      <!-- ________________ End Homework Section ________________ -->
+      <section class="section homework">
+        <div class="container">
+          <h2 class="section_title">Homework</h2>
+          <div class="text-right">
+            <a href="#" class="link1 mb-1">
+              <span>All Homeworks</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <div class="homework_box">
+              <div class="text-right">
+                <a href="#" class="homework_box_link">
+                  <span>Chemistry</span>
+                  <i class="fas fa-chevron-circle-down"></i>
+                </a>
+              </div>
+              <div>
+                <canvas id="myChart" width="400" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ________________ End Homework Section ________________ -->
+
+      <!-- ________________ End Attendence Section ________________ -->
+      <section class="section attendence">
+        <div class="container">
+          <h2 class="section_title">Attendence</h2>
+
+          <div class="attendence_box">
+            <div>
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ________________ End Attendence Section ________________ -->
+
+      <!-- ________________ End Gradebook Section ________________ -->
+      <section class="section gradebook">
+        <div class="container">
+          <h2 class="section_title">Gradebook</h2>
+
+          <div class="gradebook_box">
+            <div class="gradebook_box_table">
+              <div class="gradebook_box_table_head">
+                <div class="gradebook_box_table_head_col"></div>
+                <div class="gradebook_box_table_head_col">
+                  <h5>1st Semester</h5>
+                </div>
+                <div class="gradebook_box_table_head_col">
+                  <h5>2nd Semester</h5>
+                </div>
+                <div class="gradebook_box_table_head_col">
+                  <h5>Year Pass Limit</h5>
+                </div>
+                <div class="gradebook_box_table_head_col">
+                  <h5>Total Marks</h5>
+                </div>
+              </div>
+              <div class="gradebook_box_table_body">
+                <div class="gradebook_box_table_body_row">
+                  <div class="gradebook_box_table_body_col">
+                    <div class="gradebook_box_table_body_col_title">
+                      <h5>Math</h5>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <h5>Geology</h5>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <h5>Sociology</h5>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <h5>Chemistry</h5>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <h5>Statics</h5>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <h5>Science</h5>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <h5>Arabic</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="gradebook_box_table_body_row">
+                  <div class="gradebook_box_table_body_col">
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>42/50</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>80/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>50/50</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>98/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p><span>30</span>/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p><span>20</span>/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>80/100</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradebook_box_table_body_row">
+                  <div class="gradebook_box_table_body_col">
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>42/50</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>80/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>50/50</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>98/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p><span>30</span>/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p><span>20</span>/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>80/100</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradebook_box_table_body_row">
+                  <div class="gradebook_box_table_body_col">
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>42/50</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>80/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>50/50</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>98/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p><span>30</span>/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p><span>20</span>/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>80/100</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradebook_box_table_body_row">
+                  <div class="gradebook_box_table_body_col">
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>42/50</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>80/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>50/50</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>98/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p><span>30</span>/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p><span>20</span>/100</p>
+                    </div>
+                    <div class="gradebook_box_table_body_col_title">
+                      <p>80/100</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gradebook_box_table_footer">
+                <h5 class="gradebook_box_table_footer_title">Total Mark</h5>
+                <h5 class="gradebook_box_table_footer_total">
+                  <span>3785</span>
+                  /4000
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ________________ End Gradebook Section ________________ -->
     </main>
     <!-- ==================== Main ==================== -->
 
     <!-- ==================== Footer ==================== -->
     <footer>
-      <!-- ________________ Start Footer Section ________________ -->
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="footer_brandLogo">
-                <img
-                  src="img/global/logo.png"
-                  alt="Logo"
-                  class="img-fluid footer_brandLogo_img"
-                />
-
-                <p class="footer_brandLogo_text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente modi quis accusamus velit consectetur dolores?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ________________ End Footer Section ________________ -->
-
       <!-- ________________ Start CopyRight Section ________________ -->
       <div class="copyright">
         <div class="container">
+          <img src="img/global/logo.png" alt="" class="img-fluid" />
           <p>
-            Created &amp; Design by
-            <a href="icon-creations.com">Icon Creations</a>
+            Copyright &copy; 2022
+            <a href="https://www.nagwa.com/">Nagwa</a>
+            All Rights Reserved
           </p>
         </div>
       </div>
       <!-- ________________ End CopyRight Section ________________ -->
     </footer>
     <!-- ==================== Footer ==================== -->
-
-    <!-- ________________ Start Popup Section ________________ -->
-    <div class="popup">
-      <div class="popup_close">
-        <i class="fas fa-times fa-lg"></i>
-      </div>
-      <div class="popup_container">
-        <div class="popup_container_content"></div>
-      </div>
-    </div>
-    <!-- ________________ End Popup Section ________________ -->
 
     <!-- ===================== Start JS Files ===================== -->
     <!-- jQuery v3 -->
@@ -133,6 +462,11 @@
     <!-- Wow -->
     <script src="js/wow.min.js"></script>
     <script src="js/scrollspy.js"></script>
+    <!-- chart  -->
+    <script src="js/percircle.js"></script>
+    <script src="js/chart.js"></script>
+    <!-- fullcalendar -->
+    <script src="js/fullcalendar.min.js"></script>
     <!-- Main Script -->
     <script src="js/script.js"></script>
 

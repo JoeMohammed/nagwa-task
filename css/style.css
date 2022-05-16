@@ -19,29 +19,29 @@
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .leftContainer {
-    width: calc(540px + ((100vw - 540px) / 2));
+    width: calc(540px + (100vw - 540px) / 2);
     padding-right: 15px;
     margin-left: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .leftContainer {
-    width: calc(720px + ((100vw - 720px) / 2));
+    width: calc(720px + (100vw - 720px) / 2);
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .leftContainer {
-    width: calc(960px + ((100vw - 960px) / 2));
+    width: calc(960px + (100vw - 960px) / 2);
   }
 }
 @media (min-width: 1200px) {
   .leftContainer {
-    width: calc(1140px + ((100vw - 1140px) / 2));
+    width: calc(1140px + (100vw - 1140px) / 2);
   }
 }
 
 .mainColor {
-  color: #b600ee !important;
+  color: #026BB0 !important;
 }
 
 .secColor {
@@ -57,7 +57,7 @@
 }
 
 .mainBgColor {
-  background-color: #b600ee !important;
+  background-color: #026BB0 !important;
 }
 
 .secBgColor {
@@ -102,7 +102,7 @@
 .mainTitle {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #b600ee;
+  color: #026BB0;
   margin-bottom: 1.25rem;
 }
 
@@ -137,6 +137,28 @@ a,
   margin-bottom: 0.5rem;
 }
 
+.link1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #f0f0f1;
+  background-color: #fff;
+  margin-inline-start: auto;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #026BB0;
+  transition: all 0.3s ease-in-out;
+}
+.link1 > * {
+  margin-bottom: 0;
+}
+.link1:hover {
+  color: #026BB0;
+  background-color: rgba(2, 107, 176, 0.1);
+}
+
 .img_cover {
   width: 100%;
   height: 100%;
@@ -166,7 +188,198 @@ a,
   transform: scale(0.925);
 }
 
+.bttn {
+  margin-bottom: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #026BB0;
+  border: 1px solid #026BB0;
+  padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
+}
+.bttn:hover {
+  background-color: rgba(2, 107, 176, 0.1);
+  color: #026BB0;
+}
+
+.section_title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1.25rem;
+  padding-left: 1.1rem;
+  position: relative;
+}
+.section_title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 0.6rem;
+  height: 100%;
+  background-color: #ae7129;
+  border-radius: 6px;
+}
+
+.section {
+  padding: 50px 0;
+}
+@media (max-width: 767px) {
+  .section {
+    padding: 25px 0;
+  }
+}
+
 /* ====================================== _____________ Classes Styles _____________ ====================================== */
+/* ====================================== _____________ Fonts Styles _____________ ====================================== */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-BlackItalic.eot");
+  src: url("fonts/NotoSans-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-BlackItalic.woff2") format("woff2"), url("fonts/NotoSans-BlackItalic.woff") format("woff"), url("fonts/NotoSans-BlackItalic.ttf") format("truetype"), url("fonts/NotoSans-BlackItalic.svg#NotoSans-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-Black.eot");
+  src: url("fonts/NotoSans-Black.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-Black.woff2") format("woff2"), url("fonts/NotoSans-Black.woff") format("woff"), url("fonts/NotoSans-Black.ttf") format("truetype"), url("fonts/NotoSans-Black.svg#NotoSans-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-Bold.eot");
+  src: url("fonts/NotoSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-Bold.woff2") format("woff2"), url("fonts/NotoSans-Bold.woff") format("woff"), url("fonts/NotoSans-Bold.ttf") format("truetype"), url("fonts/NotoSans-Bold.svg#NotoSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-BoldItalic.eot");
+  src: url("fonts/NotoSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-BoldItalic.woff2") format("woff2"), url("fonts/NotoSans-BoldItalic.woff") format("woff"), url("fonts/NotoSans-BoldItalic.ttf") format("truetype"), url("fonts/NotoSans-BoldItalic.svg#NotoSans-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-ExtraBoldItalic.eot");
+  src: url("fonts/NotoSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-ExtraBoldItalic.woff2") format("woff2"), url("fonts/NotoSans-ExtraBoldItalic.woff") format("woff"), url("fonts/NotoSans-ExtraBoldItalic.ttf") format("truetype"), url("fonts/NotoSans-ExtraBoldItalic.svg#NotoSans-ExtraBoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-ExtraBold.eot");
+  src: url("fonts/NotoSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-ExtraBold.woff2") format("woff2"), url("fonts/NotoSans-ExtraBold.woff") format("woff"), url("fonts/NotoSans-ExtraBold.ttf") format("truetype"), url("fonts/NotoSans-ExtraBold.svg#NotoSans-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-ExtraLight.eot");
+  src: url("fonts/NotoSans-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-ExtraLight.woff2") format("woff2"), url("fonts/NotoSans-ExtraLight.woff") format("woff"), url("fonts/NotoSans-ExtraLight.ttf") format("truetype"), url("fonts/NotoSans-ExtraLight.svg#NotoSans-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-ExtraLightItalic.eot");
+  src: url("fonts/NotoSans-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-ExtraLightItalic.woff2") format("woff2"), url("fonts/NotoSans-ExtraLightItalic.woff") format("woff"), url("fonts/NotoSans-ExtraLightItalic.ttf") format("truetype"), url("fonts/NotoSans-ExtraLightItalic.svg#NotoSans-ExtraLightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-Italic.eot");
+  src: url("fonts/NotoSans-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-Italic.woff2") format("woff2"), url("fonts/NotoSans-Italic.woff") format("woff"), url("fonts/NotoSans-Italic.ttf") format("truetype"), url("fonts/NotoSans-Italic.svg#NotoSans-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-LightItalic.eot");
+  src: url("fonts/NotoSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-LightItalic.woff2") format("woff2"), url("fonts/NotoSans-LightItalic.woff") format("woff"), url("fonts/NotoSans-LightItalic.ttf") format("truetype"), url("fonts/NotoSans-LightItalic.svg#NotoSans-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-Light.eot");
+  src: url("fonts/NotoSans-Light.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-Light.woff2") format("woff2"), url("fonts/NotoSans-Light.woff") format("woff"), url("fonts/NotoSans-Light.ttf") format("truetype"), url("fonts/NotoSans-Light.svg#NotoSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-Medium.eot");
+  src: url("fonts/NotoSans-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-Medium.woff2") format("woff2"), url("fonts/NotoSans-Medium.woff") format("woff"), url("fonts/NotoSans-Medium.ttf") format("truetype"), url("fonts/NotoSans-Medium.svg#NotoSans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-MediumItalic.eot");
+  src: url("fonts/NotoSans-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-MediumItalic.woff2") format("woff2"), url("fonts/NotoSans-MediumItalic.woff") format("woff"), url("fonts/NotoSans-MediumItalic.ttf") format("truetype"), url("fonts/NotoSans-MediumItalic.svg#NotoSans-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-Regular.eot");
+  src: url("fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-Regular.woff2") format("woff2"), url("fonts/NotoSans-Regular.woff") format("woff"), url("fonts/NotoSans-Regular.ttf") format("truetype"), url("fonts/NotoSans-Regular.svg#NotoSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-SemiBold.eot");
+  src: url("fonts/NotoSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-SemiBold.woff2") format("woff2"), url("fonts/NotoSans-SemiBold.woff") format("woff"), url("fonts/NotoSans-SemiBold.ttf") format("truetype"), url("fonts/NotoSans-SemiBold.svg#NotoSans-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-SemiBoldItalic.eot");
+  src: url("fonts/NotoSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-SemiBoldItalic.woff2") format("woff2"), url("fonts/NotoSans-SemiBoldItalic.woff") format("woff"), url("fonts/NotoSans-SemiBoldItalic.ttf") format("truetype"), url("fonts/NotoSans-SemiBoldItalic.svg#NotoSans-SemiBoldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-Thin.eot");
+  src: url("fonts/NotoSans-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-Thin.woff2") format("woff2"), url("fonts/NotoSans-Thin.woff") format("woff"), url("fonts/NotoSans-Thin.ttf") format("truetype"), url("fonts/NotoSans-Thin.svg#NotoSans-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/NotoSans-ThinItalic.eot");
+  src: url("fonts/NotoSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("fonts/NotoSans-ThinItalic.woff2") format("woff2"), url("fonts/NotoSans-ThinItalic.woff") format("woff"), url("fonts/NotoSans-ThinItalic.ttf") format("truetype"), url("fonts/NotoSans-ThinItalic.svg#NotoSans-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+/* ====================================== _____________ Fonts Styles _____________ ====================================== */
 /* ====================================== _____________ Reset Styles _____________ ====================================== */
 * {
   outline: 0 !important;
@@ -186,7 +399,6 @@ button {
 
 html {
   font-size: 100%;
-  overflow-x: hidden;
 }
 @media (max-width: 576px) {
   html {
@@ -217,50 +429,186 @@ html {
 body {
   font-size: 1rem;
   font-weight: 400;
-  font-family: "Obviously Demo";
+  font-family: "Noto Sans";
   overflow-x: hidden;
-}
-body.ar {
-  font-family: "Obviously Demo";
-  direction: rtl;
-  text-align: right;
 }
 
 /* ====================================== _____________ Reset Styles _____________ ====================================== */
-/* ====================================== _____________ Fonts Styles _____________ ====================================== */
-/* ====================================== _____________ Fonts Styles _____________ ====================================== */
 /* ====================================== _____________ Global Styles _____________ ====================================== */
 /* ====================================== _____________ Global Styles _____________ ====================================== */
 /* ====================================== _____________ Grids Styles _____________ ====================================== */
 /* ====================================== _____________ Grids Styles _____________ ====================================== */
 /* ====================================== _____________ Header Styles _____________ ====================================== */
+header {
+  padding: 15px 0;
+  background-color: #FBFBFC;
+  border-bottom: 1px solid #F3F3F3;
+}
+@media (max-width: 576px) {
+  header {
+    padding: 10px 0;
+  }
+}
+header .navbar {
+  padding: 0;
+  background-color: transparent;
+}
+header .navbar .container {
+  padding: 0 15px;
+}
+header .navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (max-width: 576px) {
+  header .navbar .navbar-brand {
+    width: 40px;
+  }
+}
+header .navbar .navbar-brand span {
+  font-size: 0.85rem;
+}
+header .navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 991px) {
+  header .navbar .navbar-nav {
+    flex-direction: row;
+  }
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  border-radius: 13px;
+  background-color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0;
+  position: relative;
+  color: #026BB0;
+}
+@media (max-width: 576px) {
+  header .navbar .navbar-nav .nav-item .nav-link {
+    width: 35px;
+    height: 35px;
+  }
+}
+header .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
+  margin: 0;
+  position: absolute;
+  right: -1rem;
+  color: #969696;
+}
+@media (max-width: 576px) {
+  header .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
+    right: -0.75rem;
+  }
+}
+header .navbar .navbar-nav .nav-item .dropdown-menu {
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+
+.secnav {
+  padding: 15px 0;
+  background-color: transparent;
+}
+.secnav .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+.secnav_user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.secnav_user img {
+  width: 65px;
+}
+.secnav_user_title {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+}
+.secnav_collapse {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  .secnav_collapse {
+    flex-direction: column;
+  }
+}
+.secnav_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  margin-inline-start: auto;
+}
+@media (max-width: 767px) {
+  .secnav_list {
+    flex-direction: column;
+    margin-inline-start: 0;
+    margin-bottom: 1rem;
+  }
+}
+.secnav_list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid #f0f0f1;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.secnav_list_item_link img {
+  width: 35px;
+}
+.secnav_list_item_link:hover {
+  background-color: rgba(2, 107, 176, 0.1);
+  color: #026BB0;
+}
+.secnav_list_item_link.active {
+  background-color: rgba(2, 107, 176, 0.1);
+  color: #026BB0;
+  font-weight: bold;
+}
+.secnav_btn {
+  margin-inline-start: 1rem;
+}
+
 /* ====================================== _____________ Header Styles _____________ ====================================== */
 /* ====================================== _____________ Footer Styles _____________ ====================================== */
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-}
-footer .footer {
-  padding: 50px 0;
-  background-color: #000;
-}
-footer .footer_brandLogo {
-  text-align: center;
-}
-footer .footer_brandLogo_img {
-  margin-bottom: 15px;
-}
-footer .footer_brandLogo_text {
-  color: #fff;
-  margin-bottom: 0;
-}
 footer .copyright {
-  text-align: center;
   padding: 8px 0;
-  border-top: 1px solid rgba(112, 112, 112, 0.4);
+  border-top: 1px solid #f0f0f1;
+}
+footer .copyright .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .copyright img {
+  width: 100px;
 }
 footer .copyright p {
   color: #707070;
@@ -271,7 +619,7 @@ footer .copyright p a {
   margin-bottom: 0;
 }
 footer .copyright p a:hover {
-  color: #b600ee;
+  color: #026BB0;
 }
 
 /* ====================================== _____________ Footer Styles _____________ ====================================== */
@@ -305,21 +653,21 @@ footer .copyright p a:hover {
   position: absolute;
   right: 5%;
   top: 5%;
-  color: #b600ee;
+  color: #026BB0;
   cursor: pointer;
   width: 35px;
   height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #b600ee;
+  border: 1px solid #026BB0;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
 .popup_close:hover {
-  background-color: #b600ee;
+  background-color: #026BB0;
   color: #fff;
-  border-color: #b600ee;
+  border-color: #026BB0;
 }
 .popup_container {
   margin: auto;
@@ -336,6 +684,173 @@ footer .copyright p a:hover {
 
 /* ====================================== _____________ Popup Styles _____________ ====================================== */
 /* ====================================== _____________ Home Page Styles _____________ ====================================== */
+.homePage {
+  background-color: #FBFBFC;
+  border-top: 1px solid #f0f0f1;
+  min-height: 100vh;
+}
+.homePage .statistics_box {
+  border: 1px solid #f0f0f1;
+  background-color: #fff;
+  padding: 25px 15px;
+  border-radius: 20px;
+}
+.homePage .statistics_box_chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage .statistics_box_chart > div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.homePage .statistics_box_chart .percircle {
+  margin: 0 !important;
+}
+.homePage .statistics_box_chart .percircle.big {
+  font-size: 135px;
+}
+.homePage .statistics_box_chart_title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: #333333;
+  text-align: center;
+}
+.homePage .statistics_box_chart_text {
+  color: #333333;
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+.homePage .homework_box {
+  border: 1px solid #f0f0f1;
+  background-color: #fff;
+  padding: 25px 25px;
+  border-radius: 20px;
+}
+.homePage .homework_box_link {
+  color: #000;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.homePage .gradebook_box {
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .homePage .gradebook_box {
+    overflow-x: auto;
+  }
+}
+.homePage .gradebook_box_table_head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.homePage .gradebook_box_table_head_col {
+  padding: 0 15px;
+  flex: 0 0 16.25%;
+  max-width: lc(16.25%);
+}
+.homePage .gradebook_box_table_head_col:first-of-type {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+.homePage .gradebook_box_table_head_col h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+.homePage .gradebook_box_table_body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.homePage .gradebook_box_table_body_row {
+  padding: 0 15px;
+  flex: 0 0 16.25%;
+  max-width: lc(16.25%);
+}
+.homePage .gradebook_box_table_body_row:first-of-type {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+.homePage .gradebook_box_table_body_col {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+  padding: 15px 25px;
+  border: 1px solid #f0f0f1;
+  background-color: #fff;
+  height: 100%;
+}
+.homePage .gradebook_box_table_body_col_title {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f1;
+}
+.homePage .gradebook_box_table_body_col_title:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.homePage .gradebook_box_table_body_col_title h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  min-height: 24px;
+}
+.homePage .gradebook_box_table_body_col_title p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+.homePage .gradebook_box_table_body_col_title p span {
+  color: red;
+}
+.homePage .gradebook_box_table_footer {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #fff;
+  border: 1px solid #f0f0f1;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+}
+.homePage .gradebook_box_table_footer_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0;
+}
+.homePage .gradebook_box_table_footer_total {
+  color: #afafaf;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+.homePage .gradebook_box_table_footer_total span {
+  font-weight: bold;
+  color: #000;
+  font-size: 1.25rem;
+}
+@media (max-width: 991px) {
+  .homePage .gradebook_box_table {
+    width: 900px;
+  }
+}
+
 /* ====================================== _____________ Home Page Styles _____________ ====================================== */
 /* ====================================== _____________ Theme Styles _____________ ====================================== */
 /* ====================================== _____________ Theme Styles _____________ ====================================== */

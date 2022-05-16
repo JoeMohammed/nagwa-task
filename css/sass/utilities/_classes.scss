@@ -124,6 +124,28 @@ a,
   display: inline-block;
   margin-bottom: 0.5rem;
 }
+
+.link1{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  border: 1px solid $borderColor;
+  background-color: $whtColor;
+  margin-inline-start: auto;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: $mainFont;
+  color: $mainColor;
+  transition: $transition;
+  > * {
+    margin-bottom: 0;
+  }
+&:hover{
+  color: $mainColor;
+  background-color: rgba($color: $mainColor, $alpha: .1);
+}
+}
 // == Links //
 
 // == Img //
@@ -148,16 +170,65 @@ a,
 }
 
 .zoomOut {
-    overflow: hidden;
-    margin: 0;
+  overflow: hidden;
+  margin: 0;
+  img {
+    transition: $slTransition;
+  }
+  &:hover {
     img {
-      transition: $slTransition;
-    }
-    &:hover {
-      img {
-        transform: scale(0.925);
-      }
+      transform: scale(0.925);
     }
   }
+}
 // == Img //
+
+// == Btn //
+.bttn {
+  margin-bottom: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: $mainColor;
+  border: 1px solid $mainColor;
+  padding: 10px 25px;
+  transition: $transition;
+  &:hover {
+    background-color: rgba($color: $mainColor, $alpha: 0.1);
+    color: $mainColor;
+  }
+}
+// == Btn //
+
+// == Title //
+.section_title {
+  font-size: $xlFont;
+  font-weight: bold;
+  color: $blkColor;
+  margin-bottom: 1.25rem;
+  padding-left: 1.1rem;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0.6rem;
+    height: 100%;
+    background-color: #ae7129;
+    border-radius: 6px;
+  }
+}
+// == Title //
+
+// == Section //
+.section {
+  padding: 50px 0;
+  @include for_miniTb_ph() {
+    padding: 25px 0;
+  }
+}
+// == Section //
 /* ====================================== _____________ Classes Styles _____________ ====================================== */

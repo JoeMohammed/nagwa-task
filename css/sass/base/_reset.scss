@@ -39,11 +39,6 @@ body{
     font-weight: 400;
     font-family: $englishFont;
     overflow-x: hidden;
-    &.ar{
-        font-family: $arabicFont;
-        direction: rtl;
-        text-align: right;
-    }
 }
 
 /* ====================================== _____________ Reset Styles _____________ ====================================== */

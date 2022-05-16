@@ -1,3 +1,184 @@
 /* ====================================== _____________ Home Page Styles _____________ ====================================== */
-
+.homePage {
+  background-color: $offWhiteColor;
+  border-top: 1px solid $borderColor;
+  min-height: 100vh;
+  .statistics {
+    &_box {
+      border: 1px solid $borderColor;
+      background-color: $whtColor;
+      padding: 25px 15px;
+      border-radius: 20px;
+      &_chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > div {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1.5rem;
+        }
+        .percircle {
+          margin: 0 !important;
+          &.big {
+            font-size: 135px;
+          }
+        }
+        &_title {
+          font-weight: bold;
+          font-size: $xlFont;
+          margin-bottom: 0.75rem;
+          color: #333333;
+          text-align: center;
+        }
+        &_text {
+          color: #333333;
+          font-size: $mainFont;
+          margin-bottom: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .homework {
+    &_box {
+      border: 1px solid $borderColor;
+      background-color: $whtColor;
+      padding: 25px 25px;
+      border-radius: 20px;
+      &_link {
+        color: #000;
+        font-size: $smFont;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+    }
+  }
+  .attendence {
+    &_box {
+      // max-height: 300px;
+    }
+  }
+  .gradebook {
+    &_box {
+      // overflow: hidden;
+      position: relative;
+      width: 100%;
+      @include for_tablet_ph() {
+        overflow-x: auto;
+        // width: 900px;
+      }
+      &_table {
+        &_head {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-bottom: 10px;
+          margin-left: -15px;
+          margin-right: -15px;
+          &_col {
+            padding: 0 15px;
+            &:first-of-type {
+              flex: 0 0 35%;
+              max-width: 35%;
+            }
+            flex: 0 0 calc((100% - 35%) / 4);
+            max-width: lc((100% - 35%) / 4);
+            h5 {
+              font-size: $mainFont;
+              font-weight: 400;
+              text-align: center;
+            }
+          }
+        }
+        &_body {
+          display: flex;
+          // align-items: center;
+          flex-wrap: wrap;
+          margin-left: -15px;
+          margin-right: -15px;
+          &_row {
+            padding: 0 15px;
+            &:first-of-type {
+              flex: 0 0 35%;
+              max-width: 35%;
+            }
+            flex: 0 0 calc((100% - 35%) / 4);
+            max-width: lc((100% - 35%) / 4);
+            // height: 100%;
+          }
+          &_col {
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba($color: $blkColor, $alpha: 0.16) !important;
+            padding: 15px 25px;
+            border: 1px solid $borderColor;
+            background-color: $whtColor;
+            height: 100%;
+            &_title {
+              padding: 15px 0;
+              border-bottom: 1px solid $borderColor;
+              // display: flex;
+              // align-items: center;
+              &:last-of-type {
+                border-bottom: 0;
+                padding-bottom: 0;
+              }
+              h5 {
+                font-size: $mainFont;
+                font-weight: bold;
+                margin-bottom: 0;
+                min-height: 24px;
+              }
+              p {
+                font-size: $mainFont;
+                margin-bottom: 0;
+                text-align: center;
+                span {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+        &_footer {
+          margin: 20px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 15px 25px;
+          background-color: $whtColor;
+          border: 1px solid $borderColor;
+          border-radius: 10px;
+          box-shadow: 0 3px 6px rgba($color: $blkColor, $alpha: 0.16) !important;
+          &_title {
+            font-size: $lgFont;
+            font-weight: bold;
+            color: $blkColor;
+            margin-bottom: 0;
+          }
+          &_total {
+            color: #afafaf;
+            font-weight: 400;
+            margin-bottom: 0;
+            font-size: $lgFont;
+            span {
+              font-weight: bold;
+              color: $blkColor;
+              font-size: $lgFont;
+            }
+          }
+        }
+        @include for_tablet_ph() {
+          // overflow-x: auto;
+          width: 900px;
+        }
+      }
+    }
+  }
+}
 /* ====================================== _____________ Home Page Styles _____________ ====================================== */

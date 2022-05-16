@@ -1,3 +1,152 @@
 /* ====================================== _____________ Header Styles _____________ ====================================== */
+header {
+  padding: 15px 0;
+  background-color: $offWhiteColor;
+  border-bottom: 1px solid $grayColor2;
+  @include for_phone() {
+    padding: 10px 0;
+  }
+  .navbar {
+    padding: 0;
+    background-color: transparent;
+    .container {
+      padding: 0 15px;
+    }
+    .navbar-brand {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      @include for_phone() {
+        width: 40px;
+      }
+      span {
+        font-size: $smFont;
+      }
+    }
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include for_tablet_ph() {
+        flex-direction: row;
+      }
+      .nav-item {
+        .nav-link {
+          border-radius: 13px;
+          background-color: $whtColor;
+          padding: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          margin-bottom: 0;
+          position: relative;
+          color: $mainColor;
+          @include for_phone() {
+            width: 35px;
+            height: 35px;
+          }
+          &.dropdown-toggle {
+            &:after {
+              margin: 0;
+              position: absolute;
+              right: -1rem;
+              color: $grayColor;
+              @include for_phone() {
+                right: -0.75rem;
+              }
+            }
+          }
+        }
+        .dropdown-menu {
+          left: auto;
+          right: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
 
+.secnav {
+  padding: 15px 0;
+  background-color: transparent;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    // justify-content: space-between;
+  }
+
+  &_user {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    img {
+      width: 65px;
+    }
+    &_title {
+      margin-bottom: 0;
+      font-size: $xlFont;
+      font-weight: bold;
+      color: $blkColor;
+    }
+  }
+  &_collapse {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    @include for_miniTb_ph() {
+      flex-direction: column;
+    }
+  }
+  &_list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    margin-inline-start: auto;
+    @include for_miniTb_ph() {
+      flex-direction: column;
+      margin-inline-start: 0;
+      margin-bottom: 1rem;
+    }
+    &_item {
+      &_link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border-radius: 12px;
+        border: 1px solid $borderColor;
+        padding: 5px 10px;
+        margin-bottom: 0;
+        font-size: $mainFont;
+        cursor: pointer;
+        transition: $transition;
+        img {
+          width: 35px;
+        }
+        &:hover {
+          background-color: rgba($color: $mainColor, $alpha: 0.1);
+          color: $mainColor;
+        }
+        &.active {
+          background-color: rgba($color: $mainColor, $alpha: 0.1);
+          color: $mainColor;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  &_btn {
+    margin-inline-start: 1rem;
+  }
+}
 /* ====================================== _____________ Header Styles _____________ ====================================== */
